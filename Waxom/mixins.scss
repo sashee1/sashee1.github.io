@@ -1,0 +1,12 @@
+@mixin text-Raleway($color4, $font-size: 12px, $line-height: 12px) {
+	font-family: 'Raleway', $font1, $font2;
+	color: $color4;
+	font-size: $font-size;
+	line-height: $line-height;
+}
+@mixin text-Montserrat($color4, $font-size: 12px, $line-height: 12px) {
+	font-family: 'Montserrat', $font1, $font2;
+	color: $color4;
+	font-size: $font-size;
+	line-height: $line-height;
+}

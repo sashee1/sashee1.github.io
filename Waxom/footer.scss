@@ -1,0 +1,171 @@
+.foot1 {
+	background-color: #191919;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	&>div {
+		width: 270px;
+		margin: 80px 20px;
+	}
+}
+.foot1-wax {
+	&>p {
+		@include text-Montserrat($color1, 14px, 24px);
+		margin: 30px 0;
+	}
+	&>a {
+		text-decoration: none;
+		@include text-Montserrat($color4, 14px, 22px);
+		&:after {
+			content: url('img/arrow2.png');
+		}
+		&:hover {
+			color: $color2;
+		}
+	}
+}
+.foot1-logo {
+	display: inline-block;
+	height: 56px;
+	background-image: url('img/logos.png');
+	background-repeat: no-repeat;
+	&>p {
+		@include text-Raleway($color4, 34px, 56px);
+		padding-left: 64px;
+	}
+}
+.foot1-posts,
+.foot1-tweet {
+	&>h3 {
+		@include text-Raleway($color4, 24px, 24px);
+		margin: 25px 0;
+	}
+	&>span {
+		display: block;
+		height: 1px;
+		background-color: #252525;
+	}
+	&>div {
+		margin: 15px 0;
+		&:hover time{
+			color: $color4;
+		}
+		&:hover span{
+			color: $color4;
+		}
+		&:hover p{
+			color: $color2;
+		}
+	}
+	&>div>time,
+	&>div>span{
+		margin: 5px 0;
+		@include text-Raleway(#363636, 12px, 20px);
+	}
+	&>div>p {
+		@include text-Montserrat($color1, 14px, 20px);
+	}
+}
+.foot1-tweet>div>p>a {
+	text-decoration: none;
+	color: #02b4e4;
+	&:hover {
+		color: $color4;
+	}
+}
+.foot1-widget {
+	&>h3 {
+		@include text-Raleway($color4, 24px, 24px);
+		margin: 25px 0;
+	}
+}
+.foot1-img {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&>a {
+		display: block;
+		width: 130px;
+		height: 98px;
+		margin: 5px 0;
+	}
+}
+.foot1-img1 {
+	background-image: url('img/widget1.png');
+	&:hover {
+		transform: scale(1.5);
+		transition: 1s;
+	}
+	&:not(:hover) {
+		transition: 1s;
+	}
+}
+.foot1-img2 {
+	background-image: url('img/widget2.png');
+	&:hover {
+		transform: scale(1.5);
+		transition: 1s;
+	}
+	&:not(:hover) {
+		transition: 1s;
+	}
+}
+.foot1-img3 {
+	background-image: url('img/widget3.png');
+	&:hover {
+		transform: scale(1.5);
+		transition: 1s;
+	}
+	&:not(:hover) {
+		transition: 1s;
+	}
+}
+.foot1-img4 {
+	background-image: url('img/widget4.png');
+	&:hover {
+		transform: scale(1.5);
+		transition: 1s;
+	}
+	&:not(:hover) {
+		transition: 1s;
+	}
+}
+.foot2 {
+	width: 100%;
+	height: 111px;
+	display: flex;
+	justify-content: space-around;
+	background-color: #111;
+	align-items: center;
+	&>div {
+		display: flex;
+		height: 20px;
+	}
+}
+.foot2-1,
+.foot2-2 {
+	&>p {
+		@include text-Montserrat($color1, 13px, 20px);
+		&>a {
+			text-decoration: none;
+			color: #959595;
+			&:hover {
+				color: $color4;
+			}
+		}
+	}
+	&>a {
+		text-decoration: none;
+		@include text-Montserrat($color1, 13px, 20px);
+		&:hover {
+			color: #c7b299;
+		}
+	}
+	&>span {
+		display: block;
+		width: 1px;
+		height: 20px;
+		background-color: $color1;
+		margin: 0 10px;
+	}
+}

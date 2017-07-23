@@ -1,0 +1,23 @@
+.commercial {
+	width: 100%;
+	height: 150px;
+	display: flex;
+	justify-content: space-between;
+	background: linear-gradient(to right, #211b19, #4e3427);
+	&>a {
+		margin-right: 375px;
+	}
+	&>div {
+		margin:45px 0 0 375px;
+		display: inline-block;
+		&>h2 {
+			@include text-Raleway($color4, 28px, 28px);
+			&>strong {
+				color: #c7b299;
+			}
+		}
+		&>p {
+			@include text-Raleway(#615855, 18px, 36px);
+		}
+	}
+}

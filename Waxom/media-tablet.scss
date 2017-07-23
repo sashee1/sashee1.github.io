@@ -1,0 +1,158 @@
+@media (min-width: 569px) and (max-width: 1279px)
+{
+	.container {
+		width: 100%;
+	}
+	.header {
+		width: 100%;
+		height: auto;
+		background-size: cover;
+	}
+	.sub-head {
+		width: 100%;
+	}
+	.logo {
+		margin-top: 20px;
+		background-size: contain;
+	}
+	nav {
+		margin: 20px 5px 0 5px;
+		width: 75%;
+	}
+	.nav-link {
+		line-height: 10px;
+		margin: 5px;
+	}
+	.bagage {
+		margin-top: 20px;
+		margin-left: 5px;
+	}
+	.search {
+		margin-top: 20px;
+	}
+	.slider-button-left {
+		margin-left: 35px;
+	}
+	.slider-button-right {
+		margin-right: 35px;
+	}
+	.sub-head-2 {
+		margin-top: 50px;
+	}
+	.sub-head-2-1 {
+		width: 60%;
+		&>h2 {
+			font-size: 18px;
+			line-height: 24px;
+		}
+		&>h1 {
+			font-size: 26px;
+			line-height: 32px;
+		}
+	}
+	.get-button {
+		width: 100px;
+		height: 27px;
+		font-size: 10px;
+		line-height: 27px;
+	}
+	.radio {
+		margin-top: 50px;
+	}
+	.figures {
+		flex-wrap: wrap;
+	}
+	.fig1,
+	.fig2,
+	.fig3,
+	.fig4 {
+		margin: 15px;
+		width: 210px;
+	}
+	.realization {
+		&>h2 {
+			padding: 20px 0 10px 0;
+		}
+		&>p {
+			width: 75%;
+		}
+		&>div {
+			margin-top: 15px;
+			width: 554px;
+			height: 217px;
+			background-size: contain;
+		}
+	}
+	.commercial {
+		display: none;
+	}
+	.projects {
+		width: 100%;
+		&>p {
+			width: 100%;
+		}
+	}
+	.projects-nav {
+		flex-wrap: wrap;
+		&>a {
+			margin: 5px;
+		}
+	}
+	.projects-image {
+		justify-content: space-around;
+		&>article {
+			margin: 20px 55px;
+		}
+	}
+	.iphone-img {
+		width: 40%;
+		background-size: contain;
+	}
+	.iphone-txt {
+		width: 55%;
+	}
+	.counters {
+		flex-wrap: wrap;
+		height: auto;
+	}
+	.count-icon {
+		margin: 0 10px;
+	}
+	.posts {
+		&>p {
+			width: 90%;
+		}
+		&>div {
+			flex-wrap: wrap;
+		}
+	}
+	.partners {
+		background-size: cover;
+		height: auto;
+		flex-wrap: wrap;
+		&>a {
+			margin: 25px;
+		}
+	}
+	.foot1 {
+		flex-wrap: wrap;
+		&>div {
+			width: 210px;
+			margin: 15px;
+		}
+	}
+	.foot1-img {
+		&>a {
+			width: 100px;
+			height: 75px;
+			background-size: contain;
+		}
+	}
+	.foot2 {
+		height: auto;
+		flex-wrap: wrap;
+		&>div {
+			margin: 10px 0;
+		}
+	}
+}

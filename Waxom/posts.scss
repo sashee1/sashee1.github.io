@@ -1,0 +1,122 @@
+.posts {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&>h2 {
+		@include text-Raleway($color1, 30px, 30px);
+		padding-top: 50px;
+	}
+	&>p {
+		@include text-Montserrat($color6, 16px, 28px);
+		margin: 20px 0;
+		text-align: center;
+		width: 1000px;
+	}
+	&>div {
+		display: flex;
+		justify-content: center;
+	}
+}
+.post-art {
+	width: 370px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 15px;
+	&>div {
+		display: flex;
+		flex-direction: column;
+		width: 370px;
+		height: 220px;
+		background-color: #777;
+	}
+	&>h3 {
+		@include text-Raleway($color1, 20px, 20px);
+		margin: 20px 0 15px 25px;
+	}
+	&>span {
+		@include text-Montserrat($color6, 14px, 22px);
+		margin: 0 0 20px 25px;
+	}
+	&>a {
+		text-decoration: none;
+		@include text-Montserrat(#c7b299, 14px, 22px);
+		margin: 0 0 30px 25px;
+		&:after {
+			content: url('img/arrow1.png');
+		}
+		&:hover {
+			color: $color4;
+		}
+	}
+	&:hover .day {
+		background-color: #c7b299;
+	}
+	&:hover .month {
+		background-color: #a48d72;
+	}
+	&:hover{
+		background-color: #362f2d;
+	}
+	&:hover h3 {
+		color: #c7b299;
+	}
+	&:hover span {
+		color: $color4;
+	}
+}
+.day {
+	width: 50px;
+	height: 35px;
+	background-color: #363636;
+	border-radius: 5px 5px 0 0;
+	margin: 20px 0 0 20px;
+	text-align: center;
+	font-weight: 100;
+	@include text-Montserrat($color4, 24px, 35px);
+}
+.month {
+	width: 50px;
+	height: 25px;
+	background-color: #252525;
+	border-radius: 0 0 5px 5px;
+	margin-left: 20px;
+	text-align: center;
+	font-weight: 100;
+	@include text-Montserrat($color4, 12px, 25px);
+}
+.post-1 {
+	&>div {
+		background-image: url('img/post1.png');
+	}
+}
+.post-2 {
+	&>div {
+		background-image: url('img/post2.png');
+	}
+}
+.post-3 {
+	&>div {
+		background-image: url('img/post3.png');
+	}
+}
+.post-nav-left {
+	width: 22px;
+	height: 22px;
+	background-image: $post-nav;
+	background-position: 0 0;
+	margin: 40px 5px 80px 0;
+	&:hover {
+		background-position: 0 -22px;
+	}
+}
+.post-nav-right {
+	width: 22px;
+	height: 22px;
+	background-image: $post-nav;
+	background-position: -22px 0;
+	margin: 40px 0 80px 5px;
+	&:hover {
+		background-position: -22px -22px;
+	}
+}

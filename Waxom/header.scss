@@ -1,0 +1,160 @@
+.header {
+	width: 100%;
+	height: 1024px;
+	background-color: $color1;
+	background-image: url('img/header-main-photo.png');
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.sub-head {
+	width: 80%;
+	display: flex;
+	justify-content: space-around;
+}
+.logo {
+	display: inline-block;
+	height: 56px;
+	margin-top: 40px;
+	text-decoration: none;
+	background-image: url('img/logos.png');
+	background-repeat: no-repeat;
+	&:hover {
+		background-image: url('img/logos-2.png');
+	}
+	&>p {
+		@include text-Raleway($color4, 34px, 56px);
+		padding-left: 64px;
+		&:hover {
+			color: $color2;
+		}
+	}
+}
+.nav-link {
+	text-decoration: none;
+	@include text-Montserrat($color4, 14px, 136px);
+	margin: 0 10px;
+	&:hover {
+		color: $color2;
+	}
+}
+.sub-head-1-1 {
+	display: flex;
+}
+.bagage {
+	height: 24px;
+	width: 24px;
+	margin: 56px 10px 0 40px;
+	background-image: $head-icon;
+	background-position: 0 0;
+	&:hover {
+		background-position: 0 -24px;
+	}
+}
+.search {
+	height: 24px;
+	width: 24px;
+	margin: 56px 0 0 10px;
+	background-image: $head-icon;
+	background-position: 24px 0;
+	&:hover {
+		background-position: 24px -24px;
+	}
+}
+.slider-button-left,
+.slider-button-right {
+	display: inline-block;
+	width: 40px;
+	height: 73px;
+	background-image: $slider-button;
+}
+.slider-button-left {
+	margin-left: 150px;
+	background-position: 0 0;
+	&:hover {
+		background-position: 0 -73px;
+	}
+}
+.slider-button-right {
+	margin-right: 150px;
+	background-position: 40px 0;
+	&:hover {
+		background-position: 40px -73px;
+	}
+}
+.sub-head-2 {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 250px;
+}
+.sub-head-2-1 {
+	width: 600px;
+	text-align: center;
+	&>h2 {
+		@include text-Raleway($color4, 36px, 48px);
+	}
+	&>h1 {
+		@include text-Raleway($color4, 52px, 64px);
+		font-weight: 900;
+	}
+	&>p {
+		@include text-Raleway($color4, 16px, 24px);
+	}
+}
+.get-button {
+	width: 170px;
+	height: 53px;
+	margin-top: 50px;
+	display: inline-block;
+	@include text-Raleway($color4, 14px, 53px);
+	font-weight: 900;
+	text-align: center;
+	text-decoration: none;
+	background-color: $color2;
+	border-radius: 5px;
+	&:hover {
+		background-color: black;
+	}
+	&:active {
+		border: 2px solid transparent;
+	}
+}
+.radio {
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	background-image: $radio;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	margin: 320px 5px 0 5px;
+	&:hover {
+		background-position: 0 -15px;
+	}
+}
+label {
+	width: 50px;
+	height: 50px;
+	border: 1px solid white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	display: none;
+	&>span {
+		width: 35px;
+		height: 3px;
+		display: inline-block;
+		background-color: white;
+		margin: 4px;
+	}
+}
+#menu {
+	visibility: hidden;
+}
+input[type="checkbox"]:checked ~ nav {
+	visibility: visible;
+}

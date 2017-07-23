@@ -1,0 +1,24 @@
+@import "fonts.scss";
+* {
+	margin: 0;
+	padding: 0;
+}
+.container {
+	width: 1920px;
+	margin: 0 auto;
+}
+@import "varibles.scss";
+@import "mixins.scss";
+@import "header.scss";
+@import "figures.scss";
+@import "realization.scss";
+@import "commercial.scss";
+@import "projects.scss";
+@import "video.scss";
+@import "mobile.scss";
+@import "counters.scss";
+@import "posts.scss";
+@import "partners.scss";
+@import "footer.scss";
+@import "media-tablet.scss";
+@import "media-phone.scss";

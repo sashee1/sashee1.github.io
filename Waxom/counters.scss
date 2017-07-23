@@ -1,0 +1,104 @@
+.counters {
+	width: 100%;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(to right, #211b19, #4e3427);
+}
+.count-icon {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	height: 250px;
+	margin: 0 50px;
+	&>span {
+		display: inline-block;
+		background-image: $count-icon;
+	}
+	&:hover {
+		background-color: $color2;
+	}
+	&:hover h3 {
+		color: black;
+	}
+	&:hover p {
+		color: black;
+	}
+	&:hover div {
+		background-color: black;
+	}
+}
+.count-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&>h3 {
+		margin: 30px 0 15px 0;
+		@include text-Montserrat($color4, 48px, 48px);
+		font-weight: 100;
+	}
+	&>p {
+		margin: 5px 0 30px 0;
+		@include text-Montserrat(#c7b299, 14px, 14px);
+		font-weight: 400;
+	}
+	&>div {
+		display: inline-block;
+		width: 35px;
+		height: 3px;
+		background-color: $color4;
+	}
+}
+.ci-1 {
+	&>span {
+		width: 44px;
+		height: 44px;
+		background-position: 0 0;
+	}
+	&:hover span {
+		background-position: 0 -44px;
+	}
+}
+.ci-2 {
+	&>span {
+		width: 48px;
+		height: 44px;
+		background-position: -44px 0;
+	}
+	&:hover span {
+		background-position: -44px -44px;
+	}
+}
+.ci-3 {
+	&>span {
+		width: 44px;
+		height: 44px;
+		background-position: -92px 0;
+	}
+	&:hover span {
+		background-position: -92px -44px;
+	}
+}
+.ci-4 {
+	&>span {
+		width: 44px;
+		height: 44px;
+		background-position: -136px 0;
+	}
+	&:hover span {
+		background-position: -136px -44px;
+	}
+}
+.ci-5 {
+	&>span {
+		width: 54px;
+		height: 44px;
+		background-position: -180px 0;
+	}
+	&:hover span {
+		background-position: -180px -44px;
+	}
+}

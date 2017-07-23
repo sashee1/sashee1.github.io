@@ -1,0 +1,40 @@
+.mobile {
+	width: 100%;
+	background-color: $color5;
+	display: flex;
+	justify-content: center;
+	&>div {
+		display: inline-block;
+	}
+}
+.iphone-img {
+	width: 423px;
+	height: 616px;
+	background-image: url(img/iphone.png);
+	background-repeat: no-repeat;
+	margin-top: 80px;
+}
+.iphone-txt {
+	width: 650px;
+	margin-left: 30px;
+	&>h2 {
+		@include text-Raleway($color1, 30px, 30px);
+		padding-top: 200px;
+	}
+	&>p {
+		@include text-Montserrat($color6, 16px, 28px);
+		margin: 50px 0;
+	}
+}
+.iphone-list {
+	margin-left: 80px;
+	@include text-Montserrat($color6, 16px, 32px);
+	list-style-image: url('img/li1.png');
+	&>li {
+		padding-left: 20px;
+	}
+	&>li:hover {
+		list-style-image: url('img/li2.png');
+		color: black;
+	}
+}
