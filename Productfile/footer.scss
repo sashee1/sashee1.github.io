@@ -1,0 +1,210 @@
+.copy {
+	@include text($text-color3, 12px, 24px);
+	text-align: center;
+}
+.footer {
+	background-color: $head-foot-bg;
+	&>h2 {
+		@include text($text-color1, 30px, 36px);
+		font-weight: 200;
+		text-align: center;
+		padding-top: 50px;
+		margin-bottom: 30px;
+	}
+}
+.sendform {
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+	&>input {
+		display: inline-block;
+		margin-bottom: 20px;
+		height: 40px;
+		border-radius: 5px;
+		@include text($text-color3, 16px, 24px);
+		outline: none;
+	}
+	&>textarea {
+		display: inline-block;
+		margin-bottom: 20px;
+		height: 170px;
+		border-radius: 5px;
+		@include text($text-color3, 16px, 24px);
+		outline: none;
+		&:focus {
+			background-color: bisque;
+		}
+	}
+}
+.send-text:focus {
+	background-color: bisque;
+}
+.foot-cont {
+	display: flex;
+	justify-content: center;
+}
+.contacts {
+	margin-left: 45px;
+}
+.send-butt {
+	width: 140px;
+	border-radius: 5px;
+	margin: 0 auto;
+	font-weight: 600;
+	background-color: #fff;
+}
+// .skype-icon {
+// 	@include icon(0, 0);
+// 	width: 24px;
+// 	height: 26px;
+// 	&:hover {
+// 		background-position: 0 26px;
+// 	}
+// }
+.fa-skype {
+	color: white;
+	&:hover {
+		color: black;
+	}
+}
+.icq-icon {
+	@include icon(-24px, 0);
+	width: 26px;
+	height: 26px;
+	&:hover {
+		background-position: -24px 26px;
+	}
+}
+.email-icon {
+	@include icon(-50px, 0);
+	width: 22px;
+	height: 22px;
+	&:hover {
+		background-position: -50px 26px;
+	}
+}
+// .phone-icon {
+// 	@include icon(-72px, 0);
+// 	width: 24px;
+// 	height: 23px;
+// 	&:hover {
+// 		background-position: -72px 26px;
+// 	}
+// }
+.fa-phone {
+	color: white;
+	&:hover {
+		color: black;
+	}
+}
+.link-icon {
+	display: inline-block;
+	height: 24px;
+	text-decoration: none;
+	@include text($text-color1, 16px, 24px);
+	margin-left: 5px;
+	&:hover {
+		color: #000;
+	}
+}
+.skype,
+.icq,
+.email,
+.phone {
+	display: flex;
+	margin-bottom: 15px;
+}
+.social {
+	display: flex;
+	&>a {
+		display: inline-block;
+		width: 43px;
+		height: 42px;
+		margin: 20px 10px 0 0;
+	}
+}
+// .twitter-button {
+// 	background-image: $social-buttons;
+// 	background-position: 0 0;
+// 	&:hover {
+// 		background-position: 0 42px;
+// 	}
+// }
+.fa-twitter {
+	color: black;
+	background-color: white;
+	border-radius: 50%;
+	padding: 14px;
+	&:hover {
+		background-color: black;
+		color: white;
+	}
+}
+// .facebook-button {
+// 	background-image: $social-buttons;
+// 	background-position: -49px 0;
+// 	&:hover {
+// 		background-position: -49px 42px;
+// 	}
+// }
+.fa-facebook {
+	color: black;
+	background-color: white;
+	border-radius: 50%;
+	padding: 14px 18px;
+	&:hover {
+		background-color: black;
+		color: white;
+	}
+}
+// .instagram-button {
+// 	background-image: $social-buttons;
+// 	background-position: -98px 0;
+// 	&:hover {
+// 		background-position: -98px 42px;
+// 	}
+// }
+.fa-instagram {
+	color: black;
+	background-color: white;
+	border-radius: 50%;
+	padding: 14px;
+	&:hover {
+		background-color: black;
+		color: white;
+	}
+}
+// .google-button {
+// 	background-image: $social-buttons;
+// 	background-position: -148px 0;
+// 	&:hover {
+// 		background-position: -148px 42px;
+// 	}
+// }
+.fa-google-plus {
+	color: black;
+	background-color: white;
+	border-radius: 50%;
+	padding: 14px 9px;
+	&:hover {
+		background-color: black;
+		color: white;
+	}
+}
+// .youtube-button {
+// 	background-image: $social-buttons;
+// 	background-position: -197px 0;
+// 	&:hover {
+// 		background-position: -197px 42px;
+// 	}
+// }
+.fa-youtube {
+	color: black;
+	background-color: white;
+	border-radius: 50%;
+	padding: 14px 13px;
+	&:hover {
+		background-color: black;
+		color: white;
+	}
+}

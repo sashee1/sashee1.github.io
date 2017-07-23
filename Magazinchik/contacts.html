@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Контакты</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="img/icon.ico">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<img 
+				src="img/logo.png"
+				alt="Магазинчик"
+				title="Магазинчик"
+				width="136"
+				height="73"
+			>
+			<ul class="menu">
+				<li>
+					<a href="index.html">Главная</a>
+				</li>
+				<li>
+					<a href="catalog.html">Каталог</a>
+				</li>
+				<li>
+					<a href="#">Контакты</a>
+				</li>
+			</ul>
+		</div>
+		<hr>
+		<h1>Напишите нам</h1>
+			<form action="mailto:sashee1@yandex.ru" name="test" method="post">
+				<fieldset>
+					<legend>Ваши контактные данные</legend>
+					<div>
+						<label>Имя:
+							<input type="text" placeholder="Введите ваше имя">
+						</label>
+					</div>
+					<div>
+						<label>E-mail:
+							<input type="email" placeholder="Введите ваш E-mail" required>
+						</label>
+					</div>
+					<div>
+						<label>Тема:
+							<input type="text" placeholder="Введите тему сообщения">
+						</label>
+					</div>
+					<textarea placeholder="Сообщение"></textarea>
+					<div>
+						<input type="reset" value="Сбросить">
+						<input type="submit" value="Отправить">
+					</div> 
+				</fieldset>
+				<hr>
+				<p>Оцените наш интернет-магазин по 5-бальной шкале:</p>
+				<div>
+					<input type="radio" name="quest">5
+					<input type="radio" name="quest">4
+					<input type="radio" name="quest">3
+					<input type="radio" name="quest">2
+					<input type="radio" name="quest">1
+					<input type="radio" name="quest">0
+				</div>
+				<input type="submit" value="Оценить">
+			</form>
+		<hr>
+		<h2>Контактная информация</h2>
+		<p>Телефон: +7 (495) 123-43-21</p>
+		<p>Адрес: г. Москва, ул. Красноказарменная, д. 17</p>
+		<p>E-mail: <a href="mailto:sashee1@yandex.ru" target="_blank">sashee1@yandex.ru</a></p>
+		<p>
+			<b>Схема проезда:</b>
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A34715c03b0f1d423cdc0d73fce88c5a3b6d4faef4c4c02e16f902038f74459f2&amp;width=100%25&amp;height=374&amp;lang=ru_RU&amp;scroll=true"></script>
+		</p>
+		<hr>
+		<div class="footer">
+			<p>&copy; &laquo;Все права защищены&raquo;</p>
+		</div>
+	</div>
+</body>
+</html>

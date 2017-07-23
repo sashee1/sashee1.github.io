@@ -1,0 +1,35 @@
+.reviews {
+	background-color: $section-bg;
+	&>h2 {
+		@include text($text-color3, 30px, 36px);
+		margin-bottom:30px;
+		padding-top: 50px;
+		text-align: center;
+	}
+}
+.reviews-art {
+	display: flex;
+	flex-wrap: wrap;
+}
+.rev {
+	margin-left: 50px;
+	width: 45%;
+	margin: 10px 25px 25px 25px;
+	display: flex;
+	&>img {
+		border: 1px solid transparent;
+		border-radius: 50%;
+		margin-right: 30px;
+		background-color: $head-foot-bg;
+	}
+}
+.rev-text {
+	&>p {
+		@include text($text-color3, 14px, 18px);
+		font-style: italic;
+		margin: 10px 0;
+	}
+	&>span {
+		@include text(#989898, 14px, 18px);
+	}
+}

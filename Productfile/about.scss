@@ -1,0 +1,20 @@
+.about {
+	display: flex;
+	justify-content: space-between;
+}
+.about-text {
+	margin: 50px 85px 50px 50px;
+	&>h2 {
+		@include text($text-color2, 30px, 36px);
+		margin-bottom: 25px;
+	}
+	&>p {
+		@include text($text-color2, 16px, 24px);
+		margin: 15px 0;
+	}
+}
+.about-video {
+	margin: 50px 50px 50px 0;
+	width: 480px;
+	height: 360px;
+}

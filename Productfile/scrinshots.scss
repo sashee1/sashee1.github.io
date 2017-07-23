@@ -1,0 +1,33 @@
+.scrinshots>h2 {
+	@include text($text-color3, 30px, 36px);
+	margin-bottom:30px;
+	padding-top: 50px;
+	text-align: center;
+}
+.scrinshots-fig {
+	display: flex;
+	flex-wrap: wrap;
+}
+.scrin {
+	margin-left: 50px;
+	width: 45%;
+	margin: 10px 25px;
+	display: flex;
+	&>a>img {
+		margin: 0 15px 15px 0;
+		background-image: url('img/scrinshot-back.png');
+	opacity: 0.8;
+	}
+	&>a>img:hover {
+		opacity: 1.0;
+	}
+}
+.scrin-text {
+	&>h3 {
+		@include text($text-color3, 24px, 30px);
+	}
+	&>p {
+		@include text($text-color3, 16px, 24px);
+		margin-top: 5px;
+	}
+}

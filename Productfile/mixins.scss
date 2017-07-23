@@ -1,0 +1,11 @@
+@mixin text($text-color1, $font-size: 12px, $line-height: 12px) {
+	font-family: $font1, $font2;
+	color: $text-color1;
+	font-size: $font-size;
+	line-height: $line-height;
+}
+@mixin icon ($pos-x: 0, $pos-y: 0) {
+	display: inline-block;
+	background-image: $social-icons;
+	background-position: $pos-x $pos-y;
+}

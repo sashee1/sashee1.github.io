@@ -1,0 +1,51 @@
+.dignity {
+	background-color: $section-bg;
+	background-image: url('img/fon.png');
+	background-repeat: no-repeat;
+	&>h2 {
+		@include text($text-color3, 30px, 36px);
+		margin-bottom:30px;
+		padding-top: 50px;
+		text-align: center;
+	}
+	&>div {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+.dignity-div {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+.dignity-det {
+	@include text($text-color3, 16px, 24px);
+	margin: 10px 25px;
+	&>p {
+		margin: 10px 0 10px 42px;
+	}
+}
+summary {
+	outline: none;
+	&::-webkit-details-marker{
+		display: none;
+	}
+	&:before {
+		background-color: $head-foot-bg; 
+  	content: "+"; 
+  	float: left;
+  	@include text($text-color1, 32px, 32px);
+  	font-weight: bold; 
+	  margin: 5px 10px 0 0; 
+	  text-align: center; 
+	  width: 32px;
+	  height: 32px;
+	}
+	&>span {
+		display: block;
+		margin-left: 42px;
+	}
+}
+details[open] summary:before {
+  content: "-";
+}

@@ -1,0 +1,17 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+}
+.container {
+	width: 1280px;
+	margin: 0 auto;
+}
+@import "varibles.scss";
+@import "mixins.scss";
+@import "header.scss";
+@import "about.scss";
+@import "dignity.scss";
+@import "scrinshots.scss";
+@import "reviews.scss";
+@import "buy.scss";
+@import "footer.scss";
